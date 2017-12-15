@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.manueli.siscam">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Login">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".MenuPrincipal"
+            android:label="@string/title_activity_menu_principal"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".UnidadesEspera"
+            android:label="Unidades en Cuadro"
+            android:parentActivityName=".MenuPrincipal"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity
+            android:name=".UnidadServicio"
+            android:label="Unidades en Mantenimiento"
+            android:parentActivityName=".MenuPrincipal"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity
+            android:name=".UnidadTaller"
+            android:label="Unidades en Taller"
+            android:parentActivityName=".MenuPrincipal"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity
+            android:name=".ProgramacionesDeServicios"
+            android:label="Programaciones De Servicios"
+            android:parentActivityName=".MenuPrincipal"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity android:name=".Datepicker" />
+        <activity
+            android:name=".EnvioDeDatos"
+            android:label="Envio de Datos"
+            android:parentActivityName=".MenuPrincipal"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity
+            android:name=".Supervisor"
+            android:label="Supervisor"
+            android:parentActivityName=".MenuPrincipal"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity
+            android:name=".ConfigEnvioDeDatos"
+            android:label="Configuracion Avanzada"
+            android:parentActivityName=".MenuPrincipal"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+        <activity
+            android:name=".ChoferSalidaMaquiladora"
+            android:label="Supervisor"
+            android:parentActivityName=".MenuPrincipal"
+            android:windowSoftInputMode="stateHidden">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MenuPrincipal" />
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">SisCam</string>
+    <string name="title_activity_menu_principal">MenuPrincipal</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <string name="selectdate">ALVARO</string>
+    <string name="title_activity_programacion_de_servicios">ProgramacionDeServicios</string>
+    <string name="title_activity_envio_de_datos">EnvioDeDatos</string>
+    <string name="title_activity_supervisor">Supervisor</string>
+    <string name="title_activity_envio_datos">EnvioDatos</string>
+    <string name="title_activity_envio_datos_maquila">EnvioDatosMaquila</string>
+    <string name="title_activity_config_envio_de_datos">ConfigEnvioDeDatos</string>
+    <string name="title_activity_chofer_salida_maquila">ChoferSalidaMaquila</string>
+    <string name="title_activity_chofer_salida_maquiladora">ChoferSalidaMAquiladora</string>
+</resources>

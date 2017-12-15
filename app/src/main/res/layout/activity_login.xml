@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.manueli.siscam.Login"
+
+    tools:showIn="@layout/activity_login"
+
+    android:layout_marginBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="#282828"
+    android:padding="5dp"    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerVertical="true"
+        android:padding="10dp">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Version: 1.0.23"
+            android:typeface="sans"
+            android:textSize="15sp"
+            android:textColor="#00aa55"
+            android:textStyle="bold"
+            android:gravity="left" />
+        <RelativeLayout
+            android:id="@+id/relativeLayout1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#282828">
+
+            <ImageButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#282828"
+                android:id="@+id/BtnConfig"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:padding="2dp"
+                android:layout_margin="8dp"
+                android:src="@drawable/ic_settings_black_24dp"
+                tools:ignore="contentDescription"
+                android:layout_gravity="right"
+                android:layout_alignParentRight="true"/>
+
+
+        </RelativeLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Clave Asignada A Empresa"
+            android:typeface="sans"
+            android:textSize="20sp"
+            android:textColor="#00aa55"
+            android:textStyle="bold"
+            android:gravity="left"
+            android:id="@+id/TvCve"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="0dp"
+            android:id="@+id/linearLayout31"
+            android:weightSum="1">
+
+            <EditText
+                android:layout_width="92dp"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:hint="Clave"
+                android:textColor="#ffffff"
+                android:lines="1"
+                android:textColorHint="#ffffff"
+                android:textStyle="bold"
+                android:background="#5d5d5d"
+                android:padding="5dp"
+                android:layout_marginTop="5dp"
+                android:id="@+id/edtClave"
+                android:scrollHorizontally="true"
+                android:ellipsize="end"
+                android:drawablePadding="10dp"
+                android:paddingLeft="15dp"
+                android:gravity="center"
+                android:maxLines="1"
+                android:layout_alignParentTop="true"
+                android:layout_alignRight="@+id/imgButtonUnidad"
+                android:layout_alignEnd="@+id/imgButtonUnidad"
+                android:focusable="true"
+                android:focusableInTouchMode="true"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                android:layout_margin="8dp"
+                android:src="@android:drawable/ic_menu_search"
+                tools:ignore="contentDescription"
+                android:layout_gravity="left"
+                android:textColor="#ffffff"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/btnClave"
+                android:text="Guardar"
+                android:background="@drawable/red_button"
+                style="@style/button_text" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Login"
+            android:typeface="sans"
+            android:textSize="35sp"
+            android:textColor="#00aa55"
+            android:textStyle="bold"
+            android:gravity="center" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textColorHint="#ffffff"
+            android:background="#5d5d5d"
+            android:padding="10dp"
+            android:hint="Usuario"
+            android:textSize="20sp"
+            android:id="@+id/edtUsuario"
+            android:inputType="textCapCharacters"/>
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:hint="Contraseña"
+            android:textColor="#ffffff"
+            android:textColorHint="#ffffff"
+            android:textStyle="bold"
+            android:background="#5d5d5d"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:layout_marginTop="5dp"
+            android:id="@+id/edtContraseña" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:padding="10dp">
+        </LinearLayout>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:textColor="#ffffff"
+            android:textStyle="bold"
+            android:textSize="20sp"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            android:id="@+id/IdButton"
+            android:text="Entrar.."
+            android:background="@drawable/red_button"
+            style="@style/button_text"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:padding="10dp">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:padding="10dp">
+        </LinearLayout>
+        <ProgressBar
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/pbbar" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:padding="10dp">
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:padding="10dp">
+        </LinearLayout>
+    </LinearLayout>
+
+
+
+</RelativeLayout>
+

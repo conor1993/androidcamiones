@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/UnidadesEspera"
+            android:icon="@drawable/ic_directions_bus"
+            android:title="Unidades en Cuadro" />
+        <item
+            android:id="@+id/Taller"
+            android:icon="@drawable/ic_menu_manage"
+            android:title="Taller" />
+        <item
+            android:id="@+id/Servicio"
+            android:icon="@drawable/ic_settings_black_24dp"
+            android:title="Mantenimiento" />
+        <item
+            android:id="@+id/Programacion"
+            android:icon="@drawable/ic_event_note_black_24dp"
+            android:title="Programacion de Servicios" />
+        <item
+            android:id="@+id/EnvioDeDatos"
+            android:icon="@drawable/ic_repeat_black_24dp"
+            android:title="Envio de Datos" />
+        <item
+
+            android:id="@+id/SupervizorMaquila"
+            android:icon="@drawable/ic_location_city_black_24dp"
+            android:title="Supervisor en Maquiladora" />
+        <item
+            android:id="@+id/ChoferMaquila"
+            android:icon="@drawable/ic_assignment_ind_black_24dp"
+            android:title="Cant. de Personal" />
+        <item
+            android:id="@+id/Mapa"
+            android:icon="@drawable/ic_content_servicio"
+            android:title="Configuracion" />
+    </group>
+
+    <item android:title="Otras Opciones">
+        <menu>
+            <item
+                android:id="@+id/nav_share"
+                android:icon="@drawable/ic_menu_share"
+                android:title="Compartir" />
+            <item
+                android:id="@+id/Salir"
+                android:icon="@drawable/ic_close_salir"
+                android:title="Salir" />
+        </menu>
+    </item>
+
+</menu>
