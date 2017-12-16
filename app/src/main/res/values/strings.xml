@@ -15,4 +15,5 @@
     <string name="title_activity_config_envio_de_datos">ConfigEnvioDeDatos</string>
     <string name="title_activity_chofer_salida_maquila">ChoferSalidaMaquila</string>
     <string name="title_activity_chofer_salida_maquiladora">ChoferSalidaMAquiladora</string>
+    <string name="title_activity_verificar_asignacion_ruta">verificarAsignacionRuta</string>
 </resources>

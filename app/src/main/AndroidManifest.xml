@@ -94,6 +94,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".MenuPrincipal" />
         </activity>
+        <activity android:name=".verificarasignacionruta"></activity>
     </application>
 
 </manifest>
