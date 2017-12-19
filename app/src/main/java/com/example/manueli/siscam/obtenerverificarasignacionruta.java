@@ -67,10 +67,15 @@ public class obtenerverificarasignacionruta {
 
 
                 while (rs.next()) {
+
                     jsonObject = new JSONObject();
                     jsonObject.put("CodRuta",rs.getString("CodRuta"));
                     jsonObject.put("Empresa",rs.getString("Empresa"));
+                    jsonObject.put("HoraIni",rs.getString("HoraIni"));
+                    jsonObject.put("Ruta",rs.getString("Ruta"));
+                    jsonObject.put("Tipo",rs.getString("Tipo"));
                     arrayjson.put(jsonObject);
+
                 }
 
                 json.put ("datos",arrayjson);
