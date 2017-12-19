@@ -32,6 +32,10 @@
             android:icon="@drawable/ic_assignment_ind_black_24dp"
             android:title="Cant. de Personal" />
         <item
+            android:id="@+id/rutasconfirmar"
+            android:icon="@drawable/ic_assignment_ind_black_24dp"
+            android:title="Confirmar rutas" />
+        <item
             android:id="@+id/Mapa"
             android:icon="@drawable/ic_content_servicio"
             android:title="Configuracion" />

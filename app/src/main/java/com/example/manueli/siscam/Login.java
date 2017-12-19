@@ -336,9 +336,11 @@ public class Login extends AppCompatActivity {
                             } else {
                                 Connection con = Conexion.CONN();
                                 if (con == null) {
+
                                     Toast.makeText(getApplicationContext(),
                                             "Sin Conexion a Base de Datos",
                                             Toast.LENGTH_LONG).show();
+
                                 } else {
                                     String query = "select distinct UA.IdArea,A.Descripcion as DescripcionArea from " + Variables.BDSeguridad + ".dbo.UsuarioAreas UA inner join " + Variables.BDSeguridad + ".dbo.Usuarios U on U.usrndx=UA.IdUsuario " +
                                            "inner join CatAreas A on UA.IdArea=A.id  where usrid='" + Usuario + "' and usrpas2=dbo.Fn_DesencriptacionContraseñaAndroid('" + Contraseña + "')";

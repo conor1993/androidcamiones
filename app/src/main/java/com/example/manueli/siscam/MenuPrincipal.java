@@ -69,6 +69,7 @@ public class MenuPrincipal extends AppCompatActivity
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.Salir) {
+
             MenuPrincipal.this.startActivity(new Intent(MenuPrincipal.this,Login.class));
             Intent intent = new Intent(Intent.ACTION_MAIN);
             intent.addCategory(Intent.CATEGORY_HOME);
@@ -79,6 +80,7 @@ public class MenuPrincipal extends AppCompatActivity
             System.runFinalization();
             System.exit(0);
             MenuPrincipal.this.finish();
+
         }
 
         return super.onOptionsItemSelected(item);
@@ -146,6 +148,9 @@ public class MenuPrincipal extends AppCompatActivity
                   Toast.LENGTH_LONG).show();
             }
 
+        }else if (id == R.id.rutasconfirmar) {
+                Intent in = new Intent (MenuPrincipal.this, verificarasignacionruta.class);
+                startActivity(in);
         } else if (id == R.id.Mapa) {
             // Intent in = new Intent (MenuPrincipal.this, EnvioDatosMaquila.class);
             //startActivity(in);
