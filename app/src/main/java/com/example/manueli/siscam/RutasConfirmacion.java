@@ -6,11 +6,11 @@ package com.example.manueli.siscam;
 
 public class RutasConfirmacion {
 
-    private String CodRuta;
-    private String Empresa;
-    private String HoraIni;
-    private String Ruta;
-    private String Tipo;
+    public String CodRuta;
+    public String Empresa;
+    public String HoraIni;
+    public String Ruta;
+    public String Tipo;
 
     public RutasConfirmacion(String CodRuta,String Empresa,String HoraIni, String Ruta,String Tipo){
         this.CodRuta = CodRuta;

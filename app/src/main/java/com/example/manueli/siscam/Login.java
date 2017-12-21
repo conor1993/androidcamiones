@@ -64,6 +64,7 @@ public class Login extends AppCompatActivity {
         Conexion = new Conexion();
         button = (Button)findViewById(R.id.IdButton );
         BtnClave = (Button)findViewById(R.id.btnClave );
+
         BtnConfig= (ImageButton)findViewById(R.id.BtnConfig);
         edtUsuario = (EditText) findViewById(R.id.edtUsuario);
         edtContraseña = (EditText) findViewById(R.id.edtContraseña);
@@ -345,6 +346,7 @@ public class Login extends AppCompatActivity {
                                     String query = "select distinct UA.IdArea,A.Descripcion as DescripcionArea from " + Variables.BDSeguridad + ".dbo.UsuarioAreas UA inner join " + Variables.BDSeguridad + ".dbo.Usuarios U on U.usrndx=UA.IdUsuario " +
                                            "inner join CatAreas A on UA.IdArea=A.id  where usrid='" + Usuario + "' and usrpas2=dbo.Fn_DesencriptacionContraseñaAndroid('" + Contraseña + "')";
 
+                                    System.out.println(query);
                                     //String query = "select distinct UA.IdArea,A.Descripcion as DescripcionArea from " + Conexion.Serguridad + ".dbo.UsuarioAreas UA inner join " + Conexion.Serguridad + ".dbo.Usuarios U on U.usrndx=UA.IdUsuario " +
                                       //      "inner join CatAreas A on UA.IdArea=A.id  where usrid='" + Usuario + "' and usrpas2=dbo.Fn_DesencriptacionContraseñaAndroid('" + Contraseña + "')";
 

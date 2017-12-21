@@ -3,26 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:paddingBottom="@dimen/activity_vertical_margin"
-    android:paddingLeft="@dimen/activity_horizontal_margin"
-    android:paddingRight="@dimen/activity_horizontal_margin"
-    android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.manueli.siscam.UnidadesEspera"
-    android:icon="@mipmap/ic_launcher"
-    android:layout_marginBottom="@dimen/activity_vertical_margin"
-    android:orientation="vertical"
-    android:padding="5dp">
+    tools:context="com.example.manueli.siscam.verificarasignacionruta">
+    >
+
+
+    <Button
+        android:id="@+id/bntenviar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Ok" />
+
+    <ListView
+        android:id="@+id/listarutas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"
+        android:layout_below="@+id/bntenviar"></ListView>
 
 
 
-        <ListView
-            android:id="@+id/listarutas"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentLeft="true"
-            android:layout_alignParentStart="true"
-            android:drawableLeft="?android:attr/listChoiceIndicatorMultiple"/>
+
+
 
 
 
