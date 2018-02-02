@@ -17,9 +17,7 @@ import java.util.Iterator;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by integra-des2 on 19/12/2017.
- */
+
 
 public class RutaconfirmacionAdapter extends ArrayAdapter<RutasConfirmacion> {
 

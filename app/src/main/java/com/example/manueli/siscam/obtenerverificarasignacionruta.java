@@ -59,7 +59,7 @@ public class obtenerverificarasignacionruta {
                         "	   and Dia=@Dia1 and HoraIni=@HoraIni1 and HoraFinal=@HoraFinal1 end if ((select count(*) from MqRutasDiariasGeneradas where CodChofer=@CodChofer1 and Dia=@Dia1 and HoraInicio=@HoraIni1"+
                         "	    and HoraFinal=@HoraFinal1) > 1) begin update @TablaTemporal set Repetido=3 where CodChofer=@CodChofer1 and Dia=@Dia1 and HoraIni=@HoraIni1 and HoraFinal=@HoraFinal1"+
                         "		 end FETCH NEXT FROM vendor_cursor INTO @CodRuta1,@CodUnidad1,@CodChofer1,@Dia1,@HoraIni1,@HoraFinal1 end CLOSE vendor_cursor; DEALLOCATE vendor_cursor;"+
-                        "		  select * from @TablaTemporal order by FechaHora,Ruta ";
+                        "		   ";
 
 
                 stmt = con.prepareStatement(query2);
